@@ -1,0 +1,293 @@
+/* body::before {
+    display: block;
+    content: '';
+    height: 60px;
+} */
+
+a, li{
+    text-decoration: none;
+}
+
+.navbar-brand .img-fluid {
+    box-shadow: 5px 5px 5px rgba(255, 255, 255, 0.3);
+}
+
+.shake {
+    color: #5cc7ec;
+    font-size: xx-large;
+    animation: shake 6s infinite;
+}
+
+@keyframes shake {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(-5px, 0); }
+    40% { transform: translate(5px, 0); }
+    60% { transform: translate(-5px, 0); }
+    80% { transform: translate(5px, 0); }
+    100% { transform: translate(0, 0); }
+  }
+
+.nameHh {
+    font-family: cursive;
+    font-size: larger;
+    color: #000;
+
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-item:active .nav-link,
+.navbar-nav .nav-item:hover .nav-link {
+    color: #fff;
+}
+
+.container p {
+    /* imges zoom by han wk4  overflow: hidden;*/
+    overflow: hidden;
+    font-size: 1.25rem;
+    color: #000;
+}
+
+.navbar-toggler {
+    background-color: none;
+}
+
+/* Thumbnails start  */
+
+.t-nail {
+    background: rgba(255, 255, 255, .2);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    /* imges zoom by han wk4 */
+    width: 100%;
+    cursor: pointer;
+    /* transition: all 0.7s; */
+}
+
+.t-nail img {
+
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+
+}
+
+/* imges zoom by han wk4 */
+.t-nail img:hover{
+    transition: all 0.6s;
+    transform: scale(1.25);
+}
+
+h4 {
+    color: #fff; 
+    font-size: 2em; 
+    margin: 30px 0 0 0;
+}
+
+.data {
+    color: #22A0FC; 
+    font-size: 2em; 
+    font-weight: thin; 
+    margin-top: 0;
+}
+
+.keyboard {
+    background-image: url(./imagesFromWebi1622wk12/item-bgc.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+  .nav-item {
+    font-size: 1.5rem;
+  }
+
+  #statement {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+  }
+
+
+      /* nav under line start */
+      /* #navbarUline ul li a{
+        position: relative;
+        text-decoration: none;
+        font-size: 1.25rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 0.2;
+       
+        font-family: 'IM Fell English SC', serif;
+    } */
+
+    /* #navbarUline ul li a::before{
+        content: '';
+        position:absolute;
+        bottom: -2px;
+        width: 85%;
+        height: 3px;
+        background-color:#daa741;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-in-out;
+        transform-origin: right;
+    } */
+    
+    #navbarUline ul li a:hover::before{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+   /* nav under line end */ 
+
+
+   #img-layout {
+
+        background-color: rgba(130, 140, 250, 0.2);
+        display: flex;
+        justify-content: center;
+    
+   }
+
+   .shell{
+    max-width: 1300px;
+    column-count: 5;
+    column-gap: 15px;
+}
+.image{
+    margin-bottom: 15px;
+}
+.image img{
+    width: 100%;
+}
+@media (max-width:1200px){
+    .shell{
+        column-count: 4;
+    }
+}
+@media (max-width:850px){
+    .shell{
+        column-count: 3;
+    }
+}
+@media (max-width:600px){
+    .shell{
+        column-count: 2;
+    }
+}
+
+
+/* piano programm */
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+#piano {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+.pianokey{
+    width: 90%;
+    height: 700px;
+    display: flex;
+}
+.box{
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, .5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+}
+.box>a>img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+.box>span{
+    font: 200 45px '优设标题黑';
+    text-align: center;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    flex-basis: 40%;
+}
+.box:hover>img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#contact {
+	background-image: url('https://wallpaperaccess.com/full/185289.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.transparent-box {
+	background-color: rgba(255, 255, 255, 0.7);
+	border-radius: 10px;
+	padding: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.contact-heading {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+.contact-info {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/* <nav class="navbar navbar-expand-lg bg-primary navbar-dark pt-3 fixed-top" id="">
+    <div class="container">
+        <a href="index.html" class="navbar-brand" target="_blank">
+          <img
+            src="./imagesFromWebi1622wk12/redesignlogo-hanjunwei.png"
+            alt="HH-logo"
+            class="img-fluid w-25 d-sm-block"/>
+        </a>
+        
+        <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navmenu">
+    <span class="navbar-toggler-icon"></span>
+         </button>
+
+        <div class="collapse navbar-collapse " id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Others</a>
+            </li>
+
+          </ul>
+        </div>
+    </div>
+    
+    </nav> */
